@@ -1,0 +1,192 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E1729090-F6B4-483B-ABF2-AC885863FF24}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bar.CLI", "Source\Bar.CLI\Bar.CLI.csproj", "{34D4B0F2-C0A8-4206-969B-AADC8AFC6916}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bar.Inventory", "Source\Bar.Inventory\Bar.Inventory.csproj", "{70F0B9AC-2AB3-4FCC-AFA8-830213DB4299}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bar.Models", "Source\Bar.Models\Bar.Models.csproj", "{9573EAD3-7FE7-46E5-988B-DCA4149E625A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bar.Tender", "Source\Bar.Tender\Bar.Tender.csproj", "{832B4E29-51A1-4A7A-9AE8-54E335B13396}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bar.CLI.Tests", "Tests\Bar.CLI.Tests\Bar.CLI.Tests.csproj", "{6A247DE5-2953-4928-9F9C-F1DDF4955014}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4533D6F5-3A33-4333-8D1B-A41B46ED1C62}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bar.Inventory.Tests", "Tests\Bar.Inventory.Tests\Bar.Inventory.Tests.csproj", "{F2BF452B-40DD-48B8-9028-5525D5092C15}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bar.Tender.Tests", "Tests\Bar.Tender.Tests\Bar.Tender.Tests.csproj", "{BB0E55BC-1619-459A-AEC5-6EACFBBAC101}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{C2E8EBC9-1468-46F0-B9B1-BC22C169366D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bar.Models.Tests", "Tests\Bar.Models.Tests\Bar.Models.Tests.csproj", "{DA469620-A755-4F54-9D5D-7553AE14DD7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34D4B0F2-C0A8-4206-969B-AADC8AFC6916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34D4B0F2-C0A8-4206-969B-AADC8AFC6916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34D4B0F2-C0A8-4206-969B-AADC8AFC6916}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{34D4B0F2-C0A8-4206-969B-AADC8AFC6916}.Debug|x64.Build.0 = Debug|Any CPU
+		{34D4B0F2-C0A8-4206-969B-AADC8AFC6916}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{34D4B0F2-C0A8-4206-969B-AADC8AFC6916}.Debug|x86.Build.0 = Debug|Any CPU
+		{34D4B0F2-C0A8-4206-969B-AADC8AFC6916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34D4B0F2-C0A8-4206-969B-AADC8AFC6916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34D4B0F2-C0A8-4206-969B-AADC8AFC6916}.Release|x64.ActiveCfg = Release|Any CPU
+		{34D4B0F2-C0A8-4206-969B-AADC8AFC6916}.Release|x64.Build.0 = Release|Any CPU
+		{34D4B0F2-C0A8-4206-969B-AADC8AFC6916}.Release|x86.ActiveCfg = Release|Any CPU
+		{34D4B0F2-C0A8-4206-969B-AADC8AFC6916}.Release|x86.Build.0 = Release|Any CPU
+		{70F0B9AC-2AB3-4FCC-AFA8-830213DB4299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F0B9AC-2AB3-4FCC-AFA8-830213DB4299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F0B9AC-2AB3-4FCC-AFA8-830213DB4299}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{70F0B9AC-2AB3-4FCC-AFA8-830213DB4299}.Debug|x64.Build.0 = Debug|Any CPU
+		{70F0B9AC-2AB3-4FCC-AFA8-830213DB4299}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{70F0B9AC-2AB3-4FCC-AFA8-830213DB4299}.Debug|x86.Build.0 = Debug|Any CPU
+		{70F0B9AC-2AB3-4FCC-AFA8-830213DB4299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F0B9AC-2AB3-4FCC-AFA8-830213DB4299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70F0B9AC-2AB3-4FCC-AFA8-830213DB4299}.Release|x64.ActiveCfg = Release|Any CPU
+		{70F0B9AC-2AB3-4FCC-AFA8-830213DB4299}.Release|x64.Build.0 = Release|Any CPU
+		{70F0B9AC-2AB3-4FCC-AFA8-830213DB4299}.Release|x86.ActiveCfg = Release|Any CPU
+		{70F0B9AC-2AB3-4FCC-AFA8-830213DB4299}.Release|x86.Build.0 = Release|Any CPU
+		{9573EAD3-7FE7-46E5-988B-DCA4149E625A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9573EAD3-7FE7-46E5-988B-DCA4149E625A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9573EAD3-7FE7-46E5-988B-DCA4149E625A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9573EAD3-7FE7-46E5-988B-DCA4149E625A}.Debug|x64.Build.0 = Debug|Any CPU
+		{9573EAD3-7FE7-46E5-988B-DCA4149E625A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9573EAD3-7FE7-46E5-988B-DCA4149E625A}.Debug|x86.Build.0 = Debug|Any CPU
+		{9573EAD3-7FE7-46E5-988B-DCA4149E625A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9573EAD3-7FE7-46E5-988B-DCA4149E625A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9573EAD3-7FE7-46E5-988B-DCA4149E625A}.Release|x64.ActiveCfg = Release|Any CPU
+		{9573EAD3-7FE7-46E5-988B-DCA4149E625A}.Release|x64.Build.0 = Release|Any CPU
+		{9573EAD3-7FE7-46E5-988B-DCA4149E625A}.Release|x86.ActiveCfg = Release|Any CPU
+		{9573EAD3-7FE7-46E5-988B-DCA4149E625A}.Release|x86.Build.0 = Release|Any CPU
+		{832B4E29-51A1-4A7A-9AE8-54E335B13396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{832B4E29-51A1-4A7A-9AE8-54E335B13396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{832B4E29-51A1-4A7A-9AE8-54E335B13396}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{832B4E29-51A1-4A7A-9AE8-54E335B13396}.Debug|x64.Build.0 = Debug|Any CPU
+		{832B4E29-51A1-4A7A-9AE8-54E335B13396}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{832B4E29-51A1-4A7A-9AE8-54E335B13396}.Debug|x86.Build.0 = Debug|Any CPU
+		{832B4E29-51A1-4A7A-9AE8-54E335B13396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{832B4E29-51A1-4A7A-9AE8-54E335B13396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{832B4E29-51A1-4A7A-9AE8-54E335B13396}.Release|x64.ActiveCfg = Release|Any CPU
+		{832B4E29-51A1-4A7A-9AE8-54E335B13396}.Release|x64.Build.0 = Release|Any CPU
+		{832B4E29-51A1-4A7A-9AE8-54E335B13396}.Release|x86.ActiveCfg = Release|Any CPU
+		{832B4E29-51A1-4A7A-9AE8-54E335B13396}.Release|x86.Build.0 = Release|Any CPU
+		{6A247DE5-2953-4928-9F9C-F1DDF4955014}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A247DE5-2953-4928-9F9C-F1DDF4955014}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A247DE5-2953-4928-9F9C-F1DDF4955014}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6A247DE5-2953-4928-9F9C-F1DDF4955014}.Debug|x64.Build.0 = Debug|Any CPU
+		{6A247DE5-2953-4928-9F9C-F1DDF4955014}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6A247DE5-2953-4928-9F9C-F1DDF4955014}.Debug|x86.Build.0 = Debug|Any CPU
+		{6A247DE5-2953-4928-9F9C-F1DDF4955014}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A247DE5-2953-4928-9F9C-F1DDF4955014}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A247DE5-2953-4928-9F9C-F1DDF4955014}.Release|x64.ActiveCfg = Release|Any CPU
+		{6A247DE5-2953-4928-9F9C-F1DDF4955014}.Release|x64.Build.0 = Release|Any CPU
+		{6A247DE5-2953-4928-9F9C-F1DDF4955014}.Release|x86.ActiveCfg = Release|Any CPU
+		{6A247DE5-2953-4928-9F9C-F1DDF4955014}.Release|x86.Build.0 = Release|Any CPU
+		{F2BF452B-40DD-48B8-9028-5525D5092C15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2BF452B-40DD-48B8-9028-5525D5092C15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2BF452B-40DD-48B8-9028-5525D5092C15}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F2BF452B-40DD-48B8-9028-5525D5092C15}.Debug|x64.Build.0 = Debug|Any CPU
+		{F2BF452B-40DD-48B8-9028-5525D5092C15}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F2BF452B-40DD-48B8-9028-5525D5092C15}.Debug|x86.Build.0 = Debug|Any CPU
+		{F2BF452B-40DD-48B8-9028-5525D5092C15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2BF452B-40DD-48B8-9028-5525D5092C15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2BF452B-40DD-48B8-9028-5525D5092C15}.Release|x64.ActiveCfg = Release|Any CPU
+		{F2BF452B-40DD-48B8-9028-5525D5092C15}.Release|x64.Build.0 = Release|Any CPU
+		{F2BF452B-40DD-48B8-9028-5525D5092C15}.Release|x86.ActiveCfg = Release|Any CPU
+		{F2BF452B-40DD-48B8-9028-5525D5092C15}.Release|x86.Build.0 = Release|Any CPU
+		{BB0E55BC-1619-459A-AEC5-6EACFBBAC101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB0E55BC-1619-459A-AEC5-6EACFBBAC101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB0E55BC-1619-459A-AEC5-6EACFBBAC101}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BB0E55BC-1619-459A-AEC5-6EACFBBAC101}.Debug|x64.Build.0 = Debug|Any CPU
+		{BB0E55BC-1619-459A-AEC5-6EACFBBAC101}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BB0E55BC-1619-459A-AEC5-6EACFBBAC101}.Debug|x86.Build.0 = Debug|Any CPU
+		{BB0E55BC-1619-459A-AEC5-6EACFBBAC101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB0E55BC-1619-459A-AEC5-6EACFBBAC101}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB0E55BC-1619-459A-AEC5-6EACFBBAC101}.Release|x64.ActiveCfg = Release|Any CPU
+		{BB0E55BC-1619-459A-AEC5-6EACFBBAC101}.Release|x64.Build.0 = Release|Any CPU
+		{BB0E55BC-1619-459A-AEC5-6EACFBBAC101}.Release|x86.ActiveCfg = Release|Any CPU
+		{BB0E55BC-1619-459A-AEC5-6EACFBBAC101}.Release|x86.Build.0 = Release|Any CPU
+		{DA469620-A755-4F54-9D5D-7553AE14DD7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA469620-A755-4F54-9D5D-7553AE14DD7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA469620-A755-4F54-9D5D-7553AE14DD7F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DA469620-A755-4F54-9D5D-7553AE14DD7F}.Debug|x64.Build.0 = Debug|Any CPU
+		{DA469620-A755-4F54-9D5D-7553AE14DD7F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DA469620-A755-4F54-9D5D-7553AE14DD7F}.Debug|x86.Build.0 = Debug|Any CPU
+		{DA469620-A755-4F54-9D5D-7553AE14DD7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA469620-A755-4F54-9D5D-7553AE14DD7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA469620-A755-4F54-9D5D-7553AE14DD7F}.Release|x64.ActiveCfg = Release|Any CPU
+		{DA469620-A755-4F54-9D5D-7553AE14DD7F}.Release|x64.Build.0 = Release|Any CPU
+		{DA469620-A755-4F54-9D5D-7553AE14DD7F}.Release|x86.ActiveCfg = Release|Any CPU
+		{DA469620-A755-4F54-9D5D-7553AE14DD7F}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{34D4B0F2-C0A8-4206-969B-AADC8AFC6916} = {C2E8EBC9-1468-46F0-B9B1-BC22C169366D}
+		{70F0B9AC-2AB3-4FCC-AFA8-830213DB4299} = {C2E8EBC9-1468-46F0-B9B1-BC22C169366D}
+		{9573EAD3-7FE7-46E5-988B-DCA4149E625A} = {C2E8EBC9-1468-46F0-B9B1-BC22C169366D}
+		{832B4E29-51A1-4A7A-9AE8-54E335B13396} = {C2E8EBC9-1468-46F0-B9B1-BC22C169366D}
+		{6A247DE5-2953-4928-9F9C-F1DDF4955014} = {4533D6F5-3A33-4333-8D1B-A41B46ED1C62}
+		{F2BF452B-40DD-48B8-9028-5525D5092C15} = {4533D6F5-3A33-4333-8D1B-A41B46ED1C62}
+		{BB0E55BC-1619-459A-AEC5-6EACFBBAC101} = {4533D6F5-3A33-4333-8D1B-A41B46ED1C62}
+		{DA469620-A755-4F54-9D5D-7553AE14DD7F} = {4533D6F5-3A33-4333-8D1B-A41B46ED1C62}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {652EAAB5-2F60-40F2-9F2B-5577F25E36A4}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://lnktfsapp1.itint.com:8080/tfs/internal
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Source\\Bar.CLI\\Bar.CLI.csproj
+		SccProjectTopLevelParentUniqueName1 = Bar.sln
+		SccProjectName1 = Source/Bar.CLI
+		SccLocalPath1 = Source\\Bar.CLI
+		SccProjectUniqueName2 = Source\\Bar.Inventory\\Bar.Inventory.csproj
+		SccProjectTopLevelParentUniqueName2 = Bar.sln
+		SccProjectName2 = Source/Bar.Inventory
+		SccLocalPath2 = Source\\Bar.Inventory
+		SccProjectUniqueName3 = Source\\Bar.Models\\Bar.Models.csproj
+		SccProjectTopLevelParentUniqueName3 = Bar.sln
+		SccProjectName3 = Source/Bar.Models
+		SccLocalPath3 = Source\\Bar.Models
+		SccProjectUniqueName4 = Source\\Bar.Tender\\Bar.Tender.csproj
+		SccProjectTopLevelParentUniqueName4 = Bar.sln
+		SccProjectName4 = Source/Bar.Tender
+		SccLocalPath4 = Source\\Bar.Tender
+		SccProjectUniqueName5 = Tests\\Bar.CLI.Tests\\Bar.CLI.Tests.csproj
+		SccProjectTopLevelParentUniqueName5 = Bar.sln
+		SccProjectName5 = Tests/Bar.CLI.Tests
+		SccLocalPath5 = Tests\\Bar.CLI.Tests
+		SccProjectUniqueName6 = Tests\\Bar.Inventory.Tests\\Bar.Inventory.Tests.csproj
+		SccProjectTopLevelParentUniqueName6 = Bar.sln
+		SccProjectName6 = Tests/Bar.Inventory.Tests
+		SccLocalPath6 = Tests\\Bar.Inventory.Tests
+		SccProjectUniqueName7 = Tests\\Bar.Tender.Tests\\Bar.Tender.Tests.csproj
+		SccProjectTopLevelParentUniqueName7 = Bar.sln
+		SccProjectName7 = Tests/Bar.Tender.Tests
+		SccLocalPath7 = Tests\\Bar.Tender.Tests
+		SccProjectUniqueName8 = Tests\\Bar.Models.Tests\\Bar.Models.Tests.csproj
+		SccProjectTopLevelParentUniqueName8 = Bar.sln
+		SccProjectName8 = Tests/Bar.Models.Tests
+		SccLocalPath8 = Tests\\Bar.Models.Tests
+	EndGlobalSection
+EndGlobal

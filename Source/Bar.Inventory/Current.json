@@ -1,0 +1,320 @@
+[
+  {
+    "Name": "Soft Parade",
+    "Description": "A fruit rye ale by Shorts Brewing Co.",
+    "Type": "Beer",
+    "Price": 6
+  },
+  {
+    "Name": "Hard Apple Cider",
+    "Description": "A traditional hard apple cider by Vander Mill.",
+    "Type": "Beer",
+    "Price": 5.5
+  },
+  {
+    "Name": "Huma Lupa Licious",
+    "Description": "An American IPA by Shorts Brewing Co.",
+    "Type": "Beer",
+    "Price": 6
+  },
+  {
+    "Name": "Bonfire Brown",
+    "Description": "An American brown ale by Saugatuck Brewing Co.",
+    "Type": "Beer",
+    "Price": 5.5
+  },
+  {
+    "Name": "Beer Me",
+    "Description": "An American light lager by Odd Side Ales.",
+    "Type": "Beer",
+    "Price": 5.5
+  },
+  {
+    "Name": "Bell's Amber",
+    "Description": "An American amber ale by Bells Brewery Co.",
+    "Type": "Beer",
+    "Price": 6
+  },
+  {
+    "Name": "Porter",
+    "Description": "A robust porter by Founders.",
+    "Type": "Beer",
+    "Price": 6.5
+  },
+  {
+    "Name": "Defloured NEIPA",
+    "Description": "A New England-style American IPA by Witch's Hat Brewing Co.",
+    "Type": "Beer",
+    "Price": 6
+  },
+  {
+    "Name": "Flying Monkey",
+    "Description": "A sweet blend of Sobieski Cytron Vodka, peach and strawberry schnapps, strawberry purée, and lemonade.",
+    "Type": "Cocktail",
+    "Price": 8
+  },
+  {
+    "Name": "Signature Bloody Mary",
+    "Description": "A meal on its own! Handcrafted, perfectly spiced Bloody Mary made with Sobieski Vodka. Finished with a celery-salt rim and an assortment of garnishes.",
+    "Type": "Cocktail",
+    "Price": 8.75
+  },
+  {
+    "Name": "Juicy Watermelon Martini",
+    "Description": "Sobieski Orange Vodka, fresh-squeezed orange juice, watermelon purée and cranberry juice.",
+    "Type": "Cocktail",
+    "Price": 8.5
+  },
+  {
+    "Name": "Premium Blueberry Long Island",
+    "Description": "Made with Bacardi Rum, Bombay Gin and Grey Goose Vodka, and shaken with blueberry purée.",
+    "Type": "Cocktail",
+    "Price": 9.5
+  },
+  {
+    "Name": "Grey Goose Strawberry Fields Martini",
+    "Description": "Grey Goose Vodka, strawberry schnapps, and strawberry purée with a splash of lime sour.",
+    "Type": "Cocktail",
+    "Price": 10
+  },
+  {
+    "Name": "City Cosmo",
+    "Description": "A perfect blend of SKYY Pacific Blueberry Vodka, PAMA Pomegranate Liqueur, and fresh citrus juices.",
+    "Type": "Cocktail",
+    "Price": 8.5
+  },
+  {
+    "Name": "Raspberry De-Lite",
+    "Description": "A blend of fresh raspberries, lite simple syrup, squeezed lime, Sobieski Raspberry Vodka and a touch of Sprite.",
+    "Type": "Cocktail",
+    "Price": 8.5
+  },
+  {
+    "Name": "Perfect Patrón Margarita",
+    "Description": "Patrón Silver 100% Blue Agave Tequila, Patrón Citrónge, Premium Orange Liqueur, simple syrup and fresh-squeezed lime juice and lime sour.",
+    "Type": "Margarita",
+    "Price": 11
+  },
+  {
+    "Name": "Black Cherry Margarita",
+    "Description": "Cherry done right! Lunazul Reposado 100% Blue Agave Tequila, black cherry purée, triple sec, simple syrup and fresh-squeezed lime juice and lime sour.",
+    "Type": "Margarita",
+    "Price": 8
+  },
+  {
+    "Name": "Blueberry Margarita",
+    "Description": "A perfect blend of Lunazul Reposado 100% Agave Tequila, blueberry purée, triple sec, simple syrup and fresh-squeezed lime juice and lime sour.",
+    "Type": "Margarita",
+    "Price": 8
+  },
+  {
+    "Name": "Mango Margarita",
+    "Description": "What better way to improve a margarita than with mango? Lunazul 100% Blue Agave Tequila shaken with mango purée and simple syrup and fresh-squeezed lime juice and lime sour.",
+    "Type": "Margarita",
+    "Price": 8
+  },
+  {
+    "Name": "Passion Fruit Margarita",
+    "Description": "A perfect blend of Lunazul Reposado 100% Blue Agave Tequila, passion fruit purée, triple sec, simple syrup and fresh-squeezed lime juice and lime sour.",
+    "Type": "Margarita",
+    "Price": 8
+  },
+  {
+    "Name": "Coca-cola",
+    "Description": "A classic coke.",
+    "Type": "Soda",
+    "Price": 2
+  },
+  {
+    "Name": "Pepsi",
+    "Description": "A sugary drink.",
+    "Type": "Soda",
+    "Price": 2
+  },
+  {
+    "Name": "Sierra Mist",
+    "Description": "A \"healthy\" sugary drink.",
+    "Type": "Soda",
+    "Price": 2
+  },
+  {
+    "Name": "Knob Creek Rye",
+    "Description": "American rye whiskey.",
+    "Type": "Whiskey",
+    "Price": 8
+  },
+  {
+    "Name": "Bulleit Rye",
+    "Description": "American rye whiskey.",
+    "Type": "Whiskey",
+    "Price": 8
+  },
+  {
+    "Name": "Four Roses",
+    "Description": "American bourbon.",
+    "Type": "Whiskey",
+    "Price": 14
+  },
+  {
+    "Name": "Crown Royal",
+    "Description": "Canadian whisky.",
+    "Type": "Whiskey",
+    "Price": 8
+  },
+  {
+    "Name": "Glenfiddich 12 YR",
+    "Description": "Scotch whisky.",
+    "Type": "Whiskey",
+    "Price": 8
+  },
+  {
+    "Name": "Rotari Brut Split",
+    "Description": "A sparkling wine from Italy.",
+    "Type": "Wine",
+    "Price": 6.5
+  },
+  {
+    "Name": "Domaine Chandon Brut Rosé",
+    "Description": "A sparkling wine from California.",
+    "Type": "Wine",
+    "Price": 39
+  },
+  {
+    "Name": "LaMarca Prosecco",
+    "Description": "A sparkling wine from Italy.",
+    "Type": "Wine",
+    "Price": 7.5
+  },
+  {
+    "Name": "Wycliff Brut",
+    "Description": "A sparkling wine from California.",
+    "Type": "Wine",
+    "Price": 19
+  },
+  {
+    "Name": "Twisted Moscato",
+    "Description": "A sweet wine from California.",
+    "Type": "Wine",
+    "Price": 6
+  },
+  {
+    "Name": "Ecco Domani Pinot Grigio",
+    "Description": "A dry, light intensity white wine from Delle Venezie, Italy.",
+    "Type": "Wine",
+    "Price": 7
+  },
+  {
+    "Name": "Casa Lapostolle Sauvignon Blanc",
+    "Description": "A dry, light intensity white wine from Chile.",
+    "Type": "Wine",
+    "Price": 7.5
+  },
+  {
+    "Name": "Kim Crawford Sauvignon Blanc",
+    "Description": "A dry, light intensity white wine from Marlborough.",
+    "Type": "Wine",
+    "Price": 42
+  },
+  {
+    "Name": "Cliffhanger Pinot Grigio",
+    "Description": "A dry, light intensity white wine from Trentino, Italy.",
+    "Type": "Wine",
+    "Price": 9
+  },
+  {
+    "Name": "Canyon Road Chardonnay",
+    "Description": "A dry, medium intensity white wine from California.",
+    "Type": "Wine",
+    "Price": 5.75
+  },
+  {
+    "Name": "Wente Morning Fog Chardonnay",
+    "Description": "A dry, medium intensity white wine from Livemore, Valley, California.",
+    "Type": "Wine",
+    "Price": 7.75
+  },
+  {
+    "Name": "Kendall Jackson R.V. Chardonnay",
+    "Description": "A dry, medium intensity white wine from California.",
+    "Type": "Wine",
+    "Price": 9.25
+  },
+  {
+    "Name": "La Crema Chardonnay",
+    "Description": "A dry, medium intensity white wine from Sonoma Coast, California.",
+    "Type": "Wine",
+    "Price": 42
+  },
+  {
+    "Name": "White Sangria",
+    "Description": "A blend of white wine, peach schnapps, tripe sec and fruit juices.",
+    "Type": "Wine",
+    "Price": 7.5
+  },
+  {
+    "Name": "Stemmari Pinot Noir",
+    "Description": "A dry, light intensity red wine from Sicily.",
+    "Type": "Wine",
+    "Price": 6.75
+  },
+  {
+    "Name": "Mirassou Pinot Noir",
+    "Description": "A dry, light intensity red wine from California.",
+    "Type": "Wine",
+    "Price": 7.75
+  },
+  {
+    "Name": "Entwine Merlot",
+    "Description": "A dry, light intensity red wine from California.",
+    "Type": "Wine",
+    "Price": 8.5
+  },
+  {
+    "Name": "Apothic Red Blend",
+    "Description": "A dry, light intensity red wine from California.",
+    "Type": "Wine",
+    "Price": 8.5
+  },
+  {
+    "Name": "Canyon Road Cabernet Sauvignon",
+    "Description": "A dry, medium intensity red wine from California.",
+    "Type": "Wine",
+    "Price": 5.75
+  },
+  {
+    "Name": "Silver Palm Cabernet Sauvignon",
+    "Description": "A dry, medium intensity red wine from North Coast, California.",
+    "Type": "Wine",
+    "Price": 9.75
+  },
+  {
+    "Name": "Alexander Valley Vineyards Cabernet Sauvignon",
+    "Description": "A dry, medium intensity red wine from Alexander Valley, California.",
+    "Type": "Wine",
+    "Price": 12
+  },
+  {
+    "Name": "Conquista Malbec",
+    "Description": "A dry, medium intensity red wine from Mendoza, Argentina.",
+    "Type": "Wine",
+    "Price": 6.75
+  },
+  {
+    "Name": "Tamari Malbec",
+    "Description": "A dry, medium intensity red wine from Mendoza, Argentina.",
+    "Type": "Wine",
+    "Price": 9.5
+  },
+  {
+    "Name": "Jordan Cabernet Sauvignon",
+    "Description": "A dry, medium intensity red wine from California.",
+    "Type": "Wine",
+    "Price": 85
+  },
+  {
+    "Name": "Red Sangria Sunset",
+    "Description": "A blend of red wine, Sprite, fruit juices and fresh fruit.",
+    "Type": "Wine",
+    "Price": 7.5
+  }
+]
