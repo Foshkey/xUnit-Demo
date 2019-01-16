@@ -35,7 +35,15 @@ namespace Bar.Tender {
         }
     }
 
+    /// <summary>
+    /// Interface for the Bartender.
+    /// </summary>
     public interface IBartender {
+        /// <summary>
+        /// Processes the request and returns an order matching the request.
+        /// </summary>
+        /// <param name="request">The request to process</param>
+        /// <returns>The order matching the request. Null if the order couldn't be processed.</returns>
         Order ProcessRequest(string request);
     }
 }
