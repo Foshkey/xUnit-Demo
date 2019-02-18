@@ -1,10 +1,12 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace Bar.Inventory {
+namespace Bar.Inventory
+{
     /// <summary>
     /// Extensions class for services.
     /// </summary>
-    public static class ServiceExtensions {
+    public static class ServiceExtensions
+    {
         /// <summary>
         /// Adds the necessary services of this component to the service collection.
         /// </summary>

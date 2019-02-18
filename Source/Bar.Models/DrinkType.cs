@@ -1,8 +1,10 @@
-﻿namespace Bar.Models {
+﻿namespace Bar.Models
+{
     /// <summary>
     /// Types of drinks in the bar.
     /// </summary>
-    public enum DrinkType {
+    public enum DrinkType
+    {
         Unknown,
         Beer,
         Cocktail,

@@ -1,8 +1,11 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace Bar.Tender {
-    internal class RequestSanitizer : IRequestSanitizer {
-        public string Sanitize(string request) {
+namespace Bar.Tender
+{
+    internal class RequestSanitizer : IRequestSanitizer
+    {
+        public string Sanitize(string request)
+        {
             if (string.IsNullOrEmpty(request)) { return request; }
 
             var cleanRequest = request.Replace('-', ' ').Trim().ToLower(); // Convert dashes
@@ -14,7 +17,8 @@ namespace Bar.Tender {
         }
     }
 
-    internal interface IRequestSanitizer {
+    internal interface IRequestSanitizer
+    {
         string Sanitize(string request);
     }
 }

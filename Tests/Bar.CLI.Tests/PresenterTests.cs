@@ -5,14 +5,17 @@ using Moq;
 using Xunit;
 using SUT = Bar.CLI.Presenter;
 
-namespace Bar.CLI.Tests {
-    public class PresenterTests {
+namespace Bar.CLI.Tests
+{
+    public class PresenterTests
+    {
         private readonly Mock<ICustomerInterface> _customerInterfaceMock = new Mock<ICustomerInterface>();
 
         private SUT BuildTarget() => new SUT(_customerInterfaceMock.Object);
 
         [Fact]
-        public void InitializeWithNullShouldThrowException() {
+        public void InitializeWithNullShouldThrowException()
+        {
             var ex = Assert.Throws<ArgumentNullException>(() => new SUT(null));
             Assert.Contains("customerInterface", ex.Message);
         }
@@ -21,9 +24,12 @@ namespace Bar.CLI.Tests {
         [InlineData("MockName", "Here's a description.", 5)]
         [InlineData("Another Drink!", "An awesome drink!", 42)]
         [InlineData("Some other drink!", "Ha!", 2)]
-        public void ShouldPresentOrder(string name, string description, decimal price) {
-            var order = new Order() {
-                Drinks = new List<Drink>() {
+        public void ShouldPresentOrder(string name, string description, decimal price)
+        {
+            var order = new Order()
+            {
+                Drinks = new List<Drink>()
+                {
                     new Drink() { Name = name, Description = description, Price = price }
                 }
             };
@@ -36,43 +42,54 @@ namespace Bar.CLI.Tests {
         }
 
         [Fact]
-        public void ShouldPresentNullOrder() {
+        public void ShouldPresentNullOrder()
+        {
             BuildTarget().PresentOrder(null);
             _customerInterfaceMock.Verify(x => x.Say("I'm sorry. We don't have anything like that."));
         }
 
 
         [Fact]
-        public void ShouldPresentNullDrinksOrder() {
+        public void ShouldPresentNullDrinksOrder()
+        {
             BuildTarget().PresentOrder(new Order());
             _customerInterfaceMock.Verify(x => x.Say("I'm sorry. We don't have anything like that."));
         }
 
         [Fact]
-        public void ShouldPresentEmptyOrder() {
+        public void ShouldPresentEmptyOrder()
+        {
             BuildTarget().PresentOrder(new Order() { Drinks = new List<Drink>() });
             _customerInterfaceMock.Verify(x => x.Say("I'm sorry. We don't have anything like that."));
         }
 
-        public static IEnumerable<object[]> GetPresentTabTestData() {
-            var tab = new List<Order>() {
-                new Order() {
-                    Drinks = new List<Drink>() {
+        public static IEnumerable<object[]> GetPresentTabTestData()
+        {
+            var tab = new List<Order>()
+            {
+                new Order()
+                {
+                    Drinks = new List<Drink>()
+                    {
                         new Drink() { Price = 4 },
                         new Drink() { Price = 8 }
                     }
                 },
                 new Order() {
-                    Drinks = new List<Drink>() {
+                    Drinks = new List<Drink>()
+                    {
                         new Drink() { Price = 5 }
                     }
                 }
             };
             yield return new object[] { tab, new string[] { "Order 1 total: $12.00.", "Order 2 total: $5.00.", "Grand Total: $17.00." } };
 
-            tab = new List<Order>() {
-                new Order() {
-                    Drinks = new List<Drink>() {
+            tab = new List<Order>()
+            {
+                new Order()
+                {
+                    Drinks = new List<Drink>()
+                    {
                         new Drink() { Price = 4 }
                     }
                 }
@@ -85,10 +102,12 @@ namespace Bar.CLI.Tests {
 
         [Theory]
         [MemberData(nameof(GetPresentTabTestData))]
-        public void ShouldPresentTab(IEnumerable<Order> orders, IEnumerable<string> expectedStatements) {
+        public void ShouldPresentTab(IEnumerable<Order> orders, IEnumerable<string> expectedStatements)
+        {
             BuildTarget().PresentTab(orders);
             _customerInterfaceMock.Verify(x => x.Say("Here is your tab."));
-            foreach (var statement in expectedStatements) {
+            foreach (var statement in expectedStatements)
+            {
                 _customerInterfaceMock.Verify(x => x.Say(statement));
             }
         }

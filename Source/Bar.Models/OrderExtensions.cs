@@ -1,8 +1,10 @@
-﻿namespace Bar.Models {
+﻿namespace Bar.Models
+{
     /// <summary>
     /// Extension methods for <see cref="Order"/>.
     /// </summary>
-    public static class OrderExtensions {
+    public static class OrderExtensions
+    {
         /// <summary>
         /// Checks if the order is a valid order.
         /// </summary>

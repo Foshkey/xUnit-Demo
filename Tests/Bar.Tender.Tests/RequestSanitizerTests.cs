@@ -1,8 +1,10 @@
 ﻿using Xunit;
 using SUT = Bar.Tender.RequestSanitizer;
 
-namespace Bar.Tender.Tests {
-    public class RequestSanitizerTests {
+namespace Bar.Tender.Tests
+{
+    public class RequestSanitizerTests
+    {
         private SUT BuildTarget() => new SUT();
 
         [Theory]
@@ -17,7 +19,8 @@ namespace Bar.Tender.Tests {
         [InlineData("one beer and two glasses of wine", "one beer two glasses of wine")]
         [InlineData("", "")]
         [InlineData(null, null)]
-        public void ShouldSanitize(string request, string expectedResult) {
+        public void ShouldSanitize(string request, string expectedResult)
+        {
             var output = BuildTarget().Sanitize(request);
             Assert.Equal(expectedResult, output);
         }

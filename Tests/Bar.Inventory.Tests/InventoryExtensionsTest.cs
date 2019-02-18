@@ -2,18 +2,24 @@
 using Bar.Models;
 using Xunit;
 
-namespace Bar.Inventory.Tests {
-    public class InventoryExtensionsTest {
+namespace Bar.Inventory.Tests
+{
+    public class InventoryExtensionsTest
+    {
 
-        private class MockInventory : IInventory {
+        private class MockInventory : IInventory
+        {
             public List<Drink> Drinks { get; set; }
             public List<Drink> GetDrinks() => Drinks;
         }
 
         [Fact]
-        public void ShouldGetDrinks() {
-            var inventory = new MockInventory() {
-                Drinks = new List<Drink>() {
+        public void ShouldGetDrinks()
+        {
+            var inventory = new MockInventory()
+            {
+                Drinks = new List<Drink>()
+                {
                     new Drink() { Name = "MockDrink", Type = DrinkType.Beer },
                     new Drink() { Name = "Another", Type = DrinkType.Beer }
                 }
@@ -33,9 +39,12 @@ namespace Bar.Inventory.Tests {
         [InlineData(DrinkType.Soda)]
         [InlineData(DrinkType.Whiskey)]
         [InlineData(DrinkType.Wine)]
-        public void ShouldGetDrinksWithType(DrinkType drinkType) {
-            var inventory = new MockInventory() {
-                Drinks = new List<Drink>() {
+        public void ShouldGetDrinksWithType(DrinkType drinkType)
+        {
+            var inventory = new MockInventory()
+            {
+                Drinks = new List<Drink>()
+                {
                     new Drink() { Name = "MockDrink", Type = drinkType },
                     new Drink() { Name = "Another", Type = drinkType },
                     new Drink() { Name = "NotThisOne", Type = DrinkType.Unknown }
@@ -49,15 +58,20 @@ namespace Bar.Inventory.Tests {
         }
 
         [Fact]
-        public void ShouldGetRandomDrink() {
-            var inventory = new MockInventory() {
+        public void ShouldGetRandomDrink()
+        {
+            var inventory = new MockInventory()
+            {
                 Drinks = new List<Drink>()
             };
-            for (var i = 5; i <= 10; i++) {
+
+            for (var i = 5; i <= 10; i++)
+            {
                 inventory.Drinks.Add(new Drink() { Name = "MockDrink", Price = i });
             }
 
-            for (var i = 0; i < 10000; i++) {
+            for (var i = 0; i < 10000; i++)
+            {
                 var drink = inventory.GetRandomDrink();
 
                 Assert.Equal("MockDrink", drink.Name);
@@ -72,15 +86,19 @@ namespace Bar.Inventory.Tests {
         [InlineData(DrinkType.Soda)]
         [InlineData(DrinkType.Whiskey)]
         [InlineData(DrinkType.Wine)]
-        public void ShouldGetRandomDrinkWithType(DrinkType drinkType) {
-            var inventory = new MockInventory() {
-                Drinks = new List<Drink>() {
+        public void ShouldGetRandomDrinkWithType(DrinkType drinkType)
+        {
+            var inventory = new MockInventory()
+            {
+                Drinks = new List<Drink>()
+                {
                     new Drink() { Name = "MockDrink", Type = drinkType },
                     new Drink() { Name = "NotThisDrink", Type = DrinkType.Unknown }
                 }
             };
 
-            for (var i = 0; i < 10000; i++) {
+            for (var i = 0; i < 10000; i++)
+            {
                 var drink = inventory.GetRandomDrink(drinkType);
 
                 Assert.Equal("MockDrink", drink.Name);
@@ -89,7 +107,8 @@ namespace Bar.Inventory.Tests {
         }
 
         [Fact]
-        public void NullInventoryShouldReturnNull() {
+        public void NullInventoryShouldReturnNull()
+        {
             MockInventory inventory = null;
 
             var drinks = inventory.GetDrinks(DrinkType.Beer);
@@ -98,7 +117,8 @@ namespace Bar.Inventory.Tests {
         }
 
         [Fact]
-        public void EmptyInventoryShouldReturnNull() {
+        public void EmptyInventoryShouldReturnNull()
+        {
             var inventory = new MockInventory();
 
             var drinks = inventory.GetDrinks(DrinkType.Beer);
@@ -107,7 +127,8 @@ namespace Bar.Inventory.Tests {
         }
 
         [Fact]
-        public void RandomDrinkWithNullInventoryShouldReturnNull() {
+        public void RandomDrinkWithNullInventoryShouldReturnNull()
+        {
             MockInventory inventory = null;
 
             var drink = inventory.GetRandomDrink();
@@ -116,7 +137,8 @@ namespace Bar.Inventory.Tests {
         }
 
         [Fact]
-        public void RandomDrinkTypeWithNullInventoryShouldReturnNull() {
+        public void RandomDrinkTypeWithNullInventoryShouldReturnNull()
+        {
             MockInventory inventory = null;
 
             var drink = inventory.GetRandomDrink(DrinkType.Beer);
@@ -125,9 +147,12 @@ namespace Bar.Inventory.Tests {
         }
 
         [Fact]
-        public void NotInStockShouldReturnEmpty() {
-            var inventory = new MockInventory() {
-                Drinks = new List<Drink>() {
+        public void NotInStockShouldReturnEmpty()
+        {
+            var inventory = new MockInventory()
+            {
+                Drinks = new List<Drink>()
+                {
                     new Drink() { Name = "WineDrink", Type = DrinkType.Wine },
                     new Drink() { Name = "WhiskeyDrink", Type = DrinkType.Whiskey }
                 }
@@ -139,9 +164,12 @@ namespace Bar.Inventory.Tests {
         }
 
         [Fact]
-        public void RandomDrinkTypeNotInStockShouldReturnNull() {
-            var inventory = new MockInventory() {
-                Drinks = new List<Drink>() {
+        public void RandomDrinkTypeNotInStockShouldReturnNull()
+        {
+            var inventory = new MockInventory()
+            {
+                Drinks = new List<Drink>()
+                {
                     new Drink() { Name = "WineDrink", Type = DrinkType.Wine },
                     new Drink() { Name = "WhiskeyDrink", Type = DrinkType.Whiskey }
                 }

@@ -2,10 +2,13 @@
 using Moq;
 using Xunit;
 
-namespace Bar.CLI.Tests {
-    public class IntegrationTests {
+namespace Bar.CLI.Tests
+{
+    public class IntegrationTests
+    {
         [Fact]
-        public void AllServicesShouldBeRegistered() {
+        public void AllServicesShouldBeRegistered()
+        {
             var startup = new Startup();
             var services = new ServiceCollection();
             startup.ConfigureServices(services);
@@ -26,7 +29,8 @@ namespace Bar.CLI.Tests {
         [InlineData("one beer", "-1 beers", "exit")]
         [InlineData("99999999999999999999 beer", "nothing", "exit")]
         [InlineData("", "exit")]
-        public void CommandsShouldProcess(params string[] requests) {
+        public void CommandsShouldProcess(params string[] requests)
+        {
             var startup = new Startup();
             var services = new ServiceCollection();
             startup.ConfigureServices(services);
@@ -34,7 +38,9 @@ namespace Bar.CLI.Tests {
             services.AddSingleton(customerInterfaceMock.Object);
 
             var listenSequence = customerInterfaceMock.SetupSequence(x => x.Listen());
-            foreach (var request in requests) {
+
+            foreach (var request in requests)
+            {
                 listenSequence = listenSequence.Returns(request);
             }
 

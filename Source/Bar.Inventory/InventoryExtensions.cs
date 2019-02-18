@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using Bar.Models;
 
-namespace Bar.Inventory {
+namespace Bar.Inventory
+{
     /// <summary>
     /// Extensions class for <see cref="IInventory">.
     /// </summary>
-    public static class InventoryExtensions {
+    public static class InventoryExtensions
+    {
         /// <summary>
         /// Gets all of the drinks of a particular drink type.
         /// </summary>
@@ -21,7 +23,8 @@ namespace Bar.Inventory {
         /// </summary>
         /// <param name="inventory">The inventory of drinks.</param>
         /// <returns>A random drink in the inventory.</returns>
-        public static Drink GetRandomDrink(this IInventory inventory) {
+        public static Drink GetRandomDrink(this IInventory inventory)
+        {
             var drinks = inventory?.GetDrinks();
             if (drinks == null || drinks.Count == 0) { return null; }
 
@@ -37,7 +40,8 @@ namespace Bar.Inventory {
         /// <param name="inventory">The inventory of drinks.</param>
         /// <param name="drinkType">The drink type to filter the inventory.</param>
         /// <returns>A random drink of the drink type provided.</returns>
-        public static Drink GetRandomDrink(this IInventory inventory, DrinkType drinkType) {
+        public static Drink GetRandomDrink(this IInventory inventory, DrinkType drinkType)
+        {
             var drinks = inventory?.GetDrinks(drinkType);
             if (drinks == null || drinks.Count == 0) { return null; }
 

@@ -1,4 +1,5 @@
 # To learn more about .editorconfig see https://aka.ms/editorconfigdocs
+
 ###############################
 # Core EditorConfig Options   #
 ###############################
@@ -11,6 +12,7 @@ indent_style = space
 indent_size = 4
 insert_final_newline = false
 charset = utf-8-bom
+
 ###############################
 # .NET Coding Conventions     #
 ###############################
@@ -52,22 +54,6 @@ dotnet_style_prefer_conditional_expression_over_return = true
 # Style Definitions
 
 #---------------------------------------
-# Apply custom style to constants
-#---------------------------------------
-# Creating symbols to apply styles on which enforce uppercase names with the underscore symbol as a word separator
-dotnet_naming_symbols.constant_fields.applicable_kinds            = field
-dotnet_naming_symbols.constant_fields.applicable_accessibilities  = *
-dotnet_naming_symbols.constant_fields.required_modifiers          = const
-
-dotnet_naming_style.uppercase_with_underscore_separator.capitalization              = all_upper
-dotnet_naming_style.uppercase_with_underscore_separator.word_separator              = _
-
-# Applying the above style to the above symbols
-dotnet_naming_rule.constant_fields_should_be_pascal_case.symbols  = constant_fields
-dotnet_naming_rule.constant_fields_should_be_pascal_case.style    = uppercase_with_underscore_separator
-dotnet_naming_rule.constant_fields_should_be_pascal_case.severity = error
-
-#---------------------------------------
 # Apply custom style to private fields
 #---------------------------------------
 # Creating symbols to apply styles on which enforce a leading _ for all private fields
@@ -80,7 +66,7 @@ dotnet_naming_style.prefix_underscore.required_prefix = _
 # Applying the above style to the above symbols
 dotnet_naming_rule.private_members_with_underscore.symbols  = private_fields
 dotnet_naming_rule.private_members_with_underscore.style = prefix_underscore
-dotnet_naming_rule.private_members_with_underscore.severity = error
+dotnet_naming_rule.private_members_with_underscore.severity = suggestion
 
 ###############################
 # C# Coding Conventions       #
@@ -112,14 +98,15 @@ csharp_style_deconstructed_variable_declaration = true:suggestion
 csharp_prefer_simple_default_expression = true:suggestion
 csharp_style_pattern_local_over_anonymous_function = true:suggestion
 csharp_style_inlined_variable_declaration = true:suggestion
+
 ###############################
 # C# Formatting Rules         #
 ###############################
 # New line preferences
-csharp_new_line_before_open_brace = none
-csharp_new_line_before_else = false
-csharp_new_line_before_catch = false
-csharp_new_line_before_finally = false
+csharp_new_line_before_open_brace = all
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
 csharp_new_line_before_members_in_object_initializers = true
 csharp_new_line_before_members_in_anonymous_types = true
 csharp_new_line_between_query_expression_clauses = true
@@ -142,7 +129,6 @@ csharp_space_between_method_call_empty_parameter_list_parentheses = false
 # Wrapping preferences
 csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
-
 
 ###############################
 # VB Coding Conventions       #

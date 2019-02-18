@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
 
-namespace Bar.Models {
+namespace Bar.Models
+{
     /// <summary>
     /// Order model.
     /// </summary>
-    public class Order {
+    public class Order
+    {
         /// <summary>
         /// Drinks with the order.
         /// </summary>

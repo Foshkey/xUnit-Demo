@@ -1,8 +1,11 @@
 ﻿using System.Collections.Generic;
 
-namespace Bar.Tender {
-    internal class QuantityParser : IQuantityParser {
-        private readonly Dictionary<string, int> _numberTable = new Dictionary<string, int>() {
+namespace Bar.Tender
+{
+    internal class QuantityParser : IQuantityParser
+    {
+        private readonly Dictionary<string, int> _numberTable = new Dictionary<string, int>()
+        {
             ["zero"] = 0,
             ["nothing"] = 0,
             ["a"] = 1,
@@ -38,23 +41,31 @@ namespace Bar.Tender {
             ["thousand"] = 1000
         };
 
-        public List<int> Parse(string request) {
+        public List<int> Parse(string request)
+        {
             var numberList = new List<int>();
             var currentlyParsingNumber = false;
             var currentIndex = -1;
 
             request = request.Replace("hundred and", "hundred").Replace("thousand and", "thousand").Replace('-', ' ');
 
-            foreach (var word in request.Split(' ')) {
-                if (TryParse(word, out var number)) {
-                    if (currentlyParsingNumber) {
+            foreach (var word in request.Split(' '))
+            {
+                if (TryParse(word, out var number))
+                {
+                    if (currentlyParsingNumber)
+                    {
                         numberList[currentIndex] += number;
-                    } else {
+                    }
+                    else
+                    {
                         numberList.Add(number);
                         currentIndex++;
                         currentlyParsingNumber = true;
                     }
-                } else {
+                }
+                else
+                {
                     currentlyParsingNumber = false;
                 }
             }
@@ -65,7 +76,8 @@ namespace Bar.Tender {
         public bool TryParse(string word, out int number) => _numberTable.TryGetValue(word, out number) || int.TryParse(word, out number);
     }
 
-    internal interface IQuantityParser {
+    internal interface IQuantityParser
+    {
         List<int> Parse(string request);
         bool TryParse(string word, out int number);
     }

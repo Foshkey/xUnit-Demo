@@ -4,8 +4,10 @@ using Moq;
 using Xunit;
 using SUT = Bar.CLI.CustomerService;
 
-namespace Bar.CLI.Tests {
-    public class CustomerServiceTests {
+namespace Bar.CLI.Tests
+{
+    public class CustomerServiceTests
+    {
         private readonly Mock<IBartender> _bartenderMock = new Mock<IBartender>();
         private readonly Mock<ICustomerInterface> _customerInterfaceMock = new Mock<ICustomerInterface>();
         private readonly Mock<IPresenter> _presenterMock = new Mock<IPresenter>();
@@ -13,14 +15,16 @@ namespace Bar.CLI.Tests {
         private SUT BuildTarget() => new SUT(_bartenderMock.Object, _customerInterfaceMock.Object, _presenterMock.Object);
 
         [Fact]
-        public void InitializeWithNullShouldThrowException() {
+        public void InitializeWithNullShouldThrowException()
+        {
             Assert.Throws<ArgumentNullException>(() => new SUT(null, _customerInterfaceMock.Object, _presenterMock.Object));
             Assert.Throws<ArgumentNullException>(() => new SUT(_bartenderMock.Object, null, _presenterMock.Object));
             Assert.Throws<ArgumentNullException>(() => new SUT(_bartenderMock.Object, _customerInterfaceMock.Object, null));
         }
 
         [Fact]
-        public void ShouldTalkToCustomer() {
+        public void ShouldTalkToCustomer()
+        {
             _customerInterfaceMock.Setup(x => x.Listen()).Returns("exit");
 
             BuildTarget().ServeCustomer();
@@ -29,7 +33,8 @@ namespace Bar.CLI.Tests {
         }
 
         [Fact]
-        public void ShouldContinueConversationWithCustomer() {
+        public void ShouldContinueConversationWithCustomer()
+        {
             _customerInterfaceMock.SetupSequence(x => x.Listen())
                 .Returns("one beer")
                 .Returns("exit");
